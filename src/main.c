@@ -140,9 +140,11 @@ void ReadBDRaw() {
     else {
         // drive expects LBA+0x100000 rather than PSN, so correct for this
         if (DiscIsTripleLayer()) {
-            if (startAddress >= (0x7FFFFFF - layer1End))
+            if (startAddress >= (0xBFFFFFF - layer2End))
+                startAddress = startAddress + (2 * layer2End) - 0xBFFFFFE;
+            else if (startAddress >= (0x7FFFFFF - layer1End))
                 startAddress = startAddress + (2 * layer1End) - 0x7FFFFFE;
-            if (startAddress >= (0x3FFFFFF - layer0End))
+            else if (startAddress >= (0x3FFFFFF - layer0End))
                 startAddress = startAddress + (2 * layer0End) - 0x3FFFFFE;
         }
         else if (DiscIsMultiLayer()) {
