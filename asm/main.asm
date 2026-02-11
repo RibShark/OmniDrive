@@ -30,6 +30,9 @@ CommandTableCustom:
     .d16 0x00
     .d32 CommandTableCustom
 
+.org 0x1EC056
+    .d8 0xDE ; Downgrade Enable
+
 .org CommandTableDVDRead1
     .d32 DVDReadCmdHook+1
 .org CommandTableDVDRead2
