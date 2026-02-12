@@ -1,7 +1,7 @@
 .arm.little
 .thumb
 
-.Open "../firmware/DE_LG BU40N_1.00.bin","../patched_firmware/DE_LG BU40N_1.00_OmniDrive.bin",0
+.Open "../firmware/HL-DT-ST_BD-RE_BU40N_1.00.bin","../patched_firmware/HL-DT-ST_BD-RE_BU40N_1.00_OmniDrive.bin",0
 
 ; Free Space
 .definedatalabel FreeSpaceStart,0x1A6AE0
