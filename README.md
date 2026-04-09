@@ -1,3 +1,35 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=id">Bahasa Indonesia</a>
+        | <a href="https://openaitx.github.io/view.html?user=RibShark&project=OmniDrive&lang=as">অসমীয়া</
+      </div>
+    </div>
+  </details>
+</div>
+
 # OmniDrive
 Copyright © 2026 Rib
 
