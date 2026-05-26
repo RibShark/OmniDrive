@@ -18,14 +18,14 @@ OmniDrive is a firmware modification for MediaTek MT1959-based optical disc driv
 | BD-XL (R/RE) | ☑️ |
 | UHD-BD | ☑️ |
 | PlayStation 3 BD-ROM | ☑️ | Disc contents are encrypted, disc key is not retrievable
-| PlayStation 4 BD-ROM | ☑️ | Disc contents are encrypted, disc key is not retrievable
-| PlayStation 5 BD-ROM | ☑️ | Disc contents are encrypted, disc key is not retrievable
+| PlayStation 4 BD-ROM | ☑️ | Game files are encrypted, encryption key is not retrievable
+| PlayStation 5 BD-ROM | ☑️ | Game files are encrypted, encryption key is not retrievable
 | Xbox (XGD1) | ✅ |
 | Xbox 360 (XGD2/XGD3) | ✅ |
-| Xbox One/Series (XGD4) | ✅ | Disc contents are encrypted, disc key is not retrievable
+| Xbox One/Series (XGD4) | ✅ | Game files are encrypted, encryption key is not retrievable
 | GameCube (NROM)/Wii (RVL-ROM) | ✅ |
 | GameCube (NR)/Wii (RVT-R) | ❓ |
-| Wii U (WUP-ROM?) | ⚠️ | Can be read as raw, but scrambling algorithm is currently unknown |
+| Wii U (WUP-ROM?) | ⚠️ | Can be read/descrambled but not decrypted, disc key is not retrievable |
 | Wii U (CAT-R) | ☑️ |
 | Dreamcast (GD-ROM/GD-R) | ❎ | Only low-density area can be read |
 
@@ -56,3 +56,5 @@ Key:
 
 ## Flashing
 Currently the recommended method to flash the drives is to use `sdftool` which comes as part of [MakeMKV](https://makemkv.com/). The BU40N firmware should work with all slim drives and the BW-16D1HT firmware should work with all desktop drives.
+
+[Redumper](https://github.com/superg/redumper) has initial support for flashing, but cannot cross-flash drives yet.
