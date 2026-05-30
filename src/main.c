@@ -96,7 +96,7 @@ void EnableXGD() {
 }
 
 DWORD ReadDVDTOCHook(DWORD unk) {
-    // might as well patch that here
+    // patch compressed code in memory at runtime
     *DVDCharacteristicsPatchPtr = 0x19;
 
     DWORD ret = ReadDVDTOC(unk);
