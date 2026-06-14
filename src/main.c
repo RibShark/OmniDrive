@@ -16,8 +16,8 @@ DWORD SetBDCharacteristicsHook() {
         // max PSN
       //*(BYTE*)(memoryStart + BDDIOffset + 0x14) = 0x00;
         *(BYTE*)(memoryStart + BDDIOffset + 0x15) = 0xCA;
-        *(BYTE*)(memoryStart + BDDIOffset + 0x16) = 0x74;
-      //*(BYTE*)(memoryStart + BDDIOffset + 0x17) = 0x00;
+        *(BYTE*)(memoryStart + BDDIOffset + 0x16) = 0x73;
+        *(BYTE*)(memoryStart + BDDIOffset + 0x17) = 0xFF;
         // start PSN
       //*(BYTE*)(memoryStart + BDDIOffset + 0x18) = 0x00;
         *(BYTE*)(memoryStart + BDDIOffset + 0x19) = 0x10;
