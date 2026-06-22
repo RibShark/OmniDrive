@@ -35,7 +35,7 @@ DWORD SetBDCharacteristicsHook() {
 
 void SetErrorModeHook(DWORD discType, DWORD mask, DWORD mode) {
     // check for raw read bit
-    if ((cdb[1] & 80)) 
+    if ((cdb[1] & 0x80)) 
     {
         if (discType == 2)
             // DVD
