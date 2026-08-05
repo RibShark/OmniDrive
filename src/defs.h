@@ -1,13 +1,13 @@
 #ifndef __DEFS_H__
 #define __DEFS_H__
 
-#define DiscIsBD() (mediaType & 0xC0) == 0xC0
-#define DiscIsDVD() (mediaType & 0xC0) == 0x40
-#define DiscIsDVDRAM() (mediaType & 0xF0) == 0x50
-#define DiscIsCD() (mediaType & 0xC4) == 0x04
+#define DiscIsBD() ((mediaType & 0xC0) == 0xC0)
+#define DiscIsDVD() ((mediaType & 0xC0) == 0x40)
+#define DiscIsDVDRAM() ((mediaType & 0xF0) == 0x50)
+#define DiscIsCD() ((mediaType & 0xC4) == 0x04)
 
-#define DiscIsMultiLayer() ((mediaType & 0xC4) == 0x44) || ((mediaType & 0xCC) == 0xC4)
-#define DiscIsTripleLayer() (~(mediaType & 0xC8) == 0)
+#define DiscIsMultiLayer() (((mediaType & 0xC4) == 0x44) || ((mediaType & 0xCC) == 0xC4))
+#define DiscIsTripleLayer() ((~mediaType & 0xC8) == 0)
 
 typedef unsigned int DWORD;
 typedef unsigned short WORD;
