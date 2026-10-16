@@ -2,7 +2,7 @@
 Copyright © 2026 Rib
 
 ## Description
-OmniDrive is a firmware modification for MediaTek MT1959-based optical disc drives manufactured by Hitachi-LG Data Storage that enables features that allow for better, more complete reading of discs, including proprietary game discs.
+OmniDrive is a firmware modification for MediaTek MT1959-based optical disc drives manufactured by Hitachi-LG Data Storage and the MT1939-based ASUS BW-12B1LT 1.03 that enables features that allow for better, more complete reading of discs, including proprietary game discs.
 
 ## Features
 * Lead-in/lead-out reading for CD/DVD/BD and derivatives.
@@ -45,12 +45,14 @@ Key:
 * Python 3
 * pycryptodome
 ### Instructions
-1. Put the stock LG BU40N 1.00 and ASUS BW-16D1HT 3.02 firmware files in the `firmware` folder. The files should be named the following and have the following checksums:
+1. Put the stock firmware files for the drives you want to build in the `firmware` folder. The files should be named the following and have the following checksums:
 
 | Filename | CRC32 | MD5 | SHA-1 |
 | --- | --- | --- | --- |
 | HL-DT-ST_BD-RE_BU40N_1.00.bin | `E3C1A315` | `EDB28FCD7A239281ACE26A468D382A9C` | `9C48677B155154D24A3B95A32B4A29CA02FF40B3` |
 | ASUS_BW-16D1HT_3.02.bin | `84000B21` | `97F0EEABD0B675B4363B2C4749226016` | `F8DF5B579F25DA8D4E5AA5EF79F3005DAC5EB8C7` |
+| ASUS_BW-12B1LT_1.03.bin | `4AABA654` | `87912688C87B1A072899E8B71824A838` | `90D238910B968E4D17B5B81A7084F2BB2ED2FDFF` |
+
 2. Create a `build` folder and run `cmake -G Ninja ..` from the build folder.
 3. Run `ninja`. The patched firmware files should be output in the `patched_firmware` folder.
 
