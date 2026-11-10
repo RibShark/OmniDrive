@@ -263,6 +263,8 @@ void ReadCDRaw() {
     ReadCDDA();
 } 
 
+void ReadGDRaw();
+
 void CmdOmniDriveReadDiscRaw() {
     if (!mediaType)
         ReturnSense(0x02, 0x3A, 0x00); // MEDIUM NOT PRESENT
@@ -287,6 +289,13 @@ void CmdOmniDriveReadDiscRaw() {
     else if (DiscType == 2) {
         if (DiscIsBD())
             ReadBDRaw();
+        else
+            ReturnSense(0x05, 0x30, 0x02); // CANNOT READ MEDIUM - INCOMPATIBLE FORMAT
+    }
+
+    else if (DiscType == 3) {
+        if (DiscIsCD()) // a GD disc loads as a CD
+            ReadGDRaw();
         else
             ReturnSense(0x05, 0x30, 0x02); // CANNOT READ MEDIUM - INCOMPATIBLE FORMAT
     }
